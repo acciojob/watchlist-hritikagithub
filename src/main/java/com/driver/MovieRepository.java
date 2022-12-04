@@ -9,9 +9,15 @@ import java.util.*;
 @Component
 public class MovieRepository {
 
-    Map<String,Movie> movies = new HashMap<>();
-    Map<String,Director> directors = new HashMap<>();
-    Map<String,List<String>> directorMoviesMapping = new HashMap<>();
+     private Map<String,Movie> movies ;
+    private Map<String,Director> directors ;
+    private Map<String,List<String>> directorMoviesMapping ;
+
+    public MovieRepository() {
+        this.movies = new HashMap<>();
+        this.directors = new HashMap<>();
+        this.directorMoviesMapping =  new HashMap<>();
+    }
 
     public void addMovies(Movie movie){
 

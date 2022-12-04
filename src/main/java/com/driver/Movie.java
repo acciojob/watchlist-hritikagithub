@@ -21,26 +21,32 @@ public class Movie{
     }
 
     public String getName() {
+
         return name;
     }
 
     public int getDuration() {
+
         return durationInMinutes;
     }
 
     public double getImdbRating() {
+
         return imdbRating;
     }
 
     public void setName(String name) {
+
         this.name = name;
     }
 
     public void setDuration(int duration) {
+
         this.durationInMinutes = duration;
     }
 
     public void setImdbRating(double imdbRating) {
+
         this.imdbRating = imdbRating;
     }
 }
